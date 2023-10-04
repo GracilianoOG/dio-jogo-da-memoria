@@ -6,6 +6,7 @@
   --text-color: #262626;
   --reset-btn-active-color: #262809;
   --reset-btn-active-bg: #ec38bc;
+  --match-bg-color: #74dd74;
   --game-shadow: 0 0 16px rgba(0, 0, 0, .35);
 }
 
@@ -95,6 +96,10 @@ body {
 
 .item.boxOpen {
   transform: rotateY(180deg);
+}
+
+.boxMatch {
+  background-color: var(--match-bg-color);
 }
 
 .boxOpen::after,
