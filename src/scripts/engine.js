@@ -26,12 +26,17 @@ let shuffleEmojis = emojis.sort(() =>
 for(let i = 0; i < emojis.length; i++) {
   let box = document.createElement("div");
   box.className = "item";
+  box.id = i;
   box.innerHTML = shuffleEmojis[i];
   box.onclick = handleClick;
   document.querySelector(".game").appendChild(box);
 }
 
 function handleClick() {
+  if(openCards.length === 1 && openCards[0].id === this.id) {
+    return;
+  }
+  
   if(openCards.length < 2) {
     this.classList.add("boxOpen");
     openCards.push(this);
