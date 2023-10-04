@@ -35,10 +35,9 @@ function handleClick() {
   if(openCards.length < 2) {
     this.classList.add("boxOpen");
     openCards.push(this);
-  }
-
-  if(openCards.length === 2) {
-    setTimeout(checkMatch, 500);
+    if(openCards.length === 2) {
+      setTimeout(checkMatch, 500);
+    }
   }
 }
 
