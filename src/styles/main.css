@@ -4,6 +4,8 @@
   --card-back-bg: #4b6a9b;
   --card-front-bg: #e9f8ff;
   --text-color: #262626;
+  --reset-btn-active-color: #262809;
+  --reset-btn-active-bg: #ec38bc;
   --game-shadow: 0 0 16px rgba(0, 0, 0, .35);
 }
 
@@ -53,9 +55,9 @@ h2 {
   color: var(--game-bg-color);
 }
 
-.reset:focus {
-  background-color: #262809;
-  color: #ec38bc;
+.reset:active {
+  background-color: var(--reset-btn-active-color);
+  color: var(--reset-btn-active-bg);
 }
 
 .game {
