@@ -84,6 +84,10 @@ body {
   width: 100px;
 }
 
+.item:not(.boxOpen) {
+  cursor: pointer;
+}
+
 .item::after {
   background-color: var(--card-back-bg);
   backface-visibility: hidden;
