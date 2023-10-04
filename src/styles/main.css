@@ -50,7 +50,6 @@ h2 {
 }
 
 .game {
-  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -78,7 +77,6 @@ h2 {
   backface-visibility: hidden;
   content: "";
   inset: 0;
-  opacity: .85;
   position: absolute;
   transform: rotateY(0deg);
   transition: .25s;
