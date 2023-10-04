@@ -36,7 +36,7 @@ h2 {
 }
 
 .reset {
-  background-color: #fff;
+  background-color: var(--game-bg-color);
   border: 1px solid var(--text-color);
   color: var(--text-color);
   cursor: pointer;
@@ -46,6 +46,11 @@ h2 {
   padding: 15px 20px;
   text-transform: uppercase;
   width: 100%;
+}
+
+.reset:hover {
+  background-color: var(--text-color);
+  color: var(--game-bg-color);
 }
 
 .reset:focus {
