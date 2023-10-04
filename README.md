@@ -24,9 +24,9 @@ Jogo da Memória feito em HTML, CSS e JavaScript puro durante as aulas do Desafi
 
 ## ⏳ Atualizações futuras
 
-- [ ] Mudar a aparência da página e das cartas.
+- [x] Mudar a aparência da página e das cartas.
 - [ ] Deixar o jogo responsivo para mobile.
-- [ ] Correção de bugs.
+- [x] Correção de bugs.
 
 ## 📲 Contato
 
