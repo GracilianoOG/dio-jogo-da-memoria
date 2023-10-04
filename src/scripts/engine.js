@@ -33,10 +33,14 @@ for(let i = 0; i < emojis.length; i++) {
 }
 
 function handleClick() {
+  if(this.classList.contains("boxMatch")) {
+    return;
+  }
+
   if(openCards.length === 1 && openCards[0].id === this.id) {
     return;
   }
-  
+
   if(openCards.length < 2) {
     this.classList.add("boxOpen");
     openCards.push(this);
