@@ -74,6 +74,7 @@ body {
 .item {
   align-items: center;
   background-color: var(--card-front-bg);
+  border: none;
   display: flex;
   font-size: 3em;
   height: 100px;

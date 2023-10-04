@@ -24,7 +24,7 @@ let shuffleEmojis = emojis.sort(() =>
 );
 
 for(let i = 0; i < emojis.length; i++) {
-  let box = document.createElement("div");
+  let box = document.createElement("button");
   box.className = "item";
   box.id = i;
   box.innerHTML = shuffleEmojis[i];
