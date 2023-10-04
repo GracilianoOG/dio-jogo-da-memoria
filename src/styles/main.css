@@ -30,7 +30,7 @@ body {
   position: relative;
 }
 
-h2 {
+.title {
   color: var(--text-color);
   font-size: 3em;
   text-transform: uppercase;
