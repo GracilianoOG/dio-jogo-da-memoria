@@ -42,6 +42,8 @@ function handleClick() {
   }
 
   if(openCards.length < 2) {
+    const cardFlip = new Audio("src/assets/audios/flip.ogg");
+    cardFlip.play();
     this.classList.add("boxOpen");
     openCards.push(this);
     if(openCards.length === 2) {
