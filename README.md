@@ -28,6 +28,11 @@ Jogo da Memória feito em HTML, CSS e JavaScript puro durante as aulas do Desafi
 - [ ] Deixar o jogo responsivo para mobile.
 - [x] Correção de bugs.
 
+## 📝 Créditos
+
+- [Som de virar as cartas](https://freesound.org/s/536782/) sob a licença [Creative Commons 3.0](https://creativecommons.org/licenses/by/3.0/).
+- [Som de vitória ao acertar os pares](https://freesound.org/s/536782/).
+
 ## 📲 Contato
 
 Entre em contato comigo acessando minhas redes:
