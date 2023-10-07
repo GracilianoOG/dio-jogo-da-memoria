@@ -32,6 +32,7 @@ Jogo da Memória feito em HTML, CSS e JavaScript puro durante as aulas do Desafi
 
 - [Som de virar as cartas](https://freesound.org/s/536782/) sob a licença [Creative Commons 3.0](https://creativecommons.org/licenses/by/3.0/).
 - [Som de vitória ao acertar os pares](https://freesound.org/s/536782/).
+- Favicon gerado pelo [favicon.io](https://favicon.io/emoji-favicons/face-with-tears-of-joy), parte do projeto [Twemoji](https://twemoji.twitter.com/), sob a licença [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ## 📲 Contato
 
