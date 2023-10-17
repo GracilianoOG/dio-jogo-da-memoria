@@ -28,8 +28,8 @@ body {
   flex-direction: column;
   gap: 1.875rem;
   justify-content: center;
+  margin: 1rem;
   padding: 2.5rem 3.75rem;
-  position: relative;
 }
 
 .title {
@@ -72,17 +72,18 @@ body {
 }
 
 .item {
+  --relative-size: clamp(4.6875rem, 16vw, 6.25rem);
   align-items: center;
   background-color: var(--card-front-bg);
   border: none;
   display: flex;
   font-size: 3rem;
-  height: 6.25rem;
+  height: var(--relative-size);
   justify-content: center;
   position: relative;
   transform: rotateY(0deg);
   transition: .25s;
-  width: 6.25rem;
+  width: var(--relative-size);
 }
 
 .item:not(.boxOpen) {
@@ -110,4 +111,15 @@ body {
 .boxOpen::after,
 .boxMatch::after {
   transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 36rem) {
+  body {
+    background-color: var(--game-bg-color);
+  }
+
+  .container {
+    box-shadow: none;
+    padding: 0;
+  }
 }
