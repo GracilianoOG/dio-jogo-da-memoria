@@ -76,4 +76,8 @@ function init() {
   }
 }
 
+function restart() {
+  window.location.reload();
+}
+
 init();
