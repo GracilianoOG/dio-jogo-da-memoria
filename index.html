@@ -24,6 +24,13 @@
     <h1 class="title">Memory game</h1>
     <div class="game"></div>
     <button class="reset" onclick="window.location.reload()">Reset game</button>
+    <div class="modal" id="game-results">
+      <div class="dialog">
+        <div class="icon" aria-hidden="true">🥰</div>
+        <p class="congrats">You won the match!</p>
+        <button class="restart" onclick="window.location.reload()">Restart</button>
+      </div>
+    </div>
   </main>
   <script src="./src/scripts/engine.js" defer></script>
 </body>

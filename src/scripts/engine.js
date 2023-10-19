@@ -18,7 +18,7 @@ const emojis = [
 ];
 
 const pairMatchedAudio = document.querySelector("#success");
-
+const CHECKING_TIME = 500;
 let openCards = [];
 
 function handleClick() {
@@ -35,7 +35,7 @@ function handleClick() {
     this.classList.add("boxOpen");
     openCards.push(this);
     if(openCards.length === 2) {
-      setTimeout(checkMatch, 500);
+      setTimeout(checkMatch, CHECKING_TIME);
     }
   }
 }
@@ -57,7 +57,7 @@ function checkMatch() {
   openCards = [];
 
   if(document.querySelectorAll(".boxMatch").length === emojis.length) {
-    alert("Você venceu!");
+    setTimeout(() => document.querySelector("#game-results").classList.add("show"), CHECKING_TIME);
   }
 }
 

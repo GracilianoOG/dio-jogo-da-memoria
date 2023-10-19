@@ -7,6 +7,7 @@
   --reset-btn-active-color: #262809;
   --reset-btn-active-bg: #ec38bc;
   --match-bg-color: #74dd74;
+  --dialog-bg-color: #119add;
   --game-shadow: 0 0 1rem rgba(0, 0, 0, .35);
 }
 
@@ -112,6 +113,53 @@ body {
 .boxOpen::after,
 .boxMatch::after {
   transform: rotateY(180deg);
+}
+
+.modal {
+  align-items: center;
+  background-color: rgba(0, 0, 0, .1);
+  display: none;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.show {
+  display: flex;
+}
+
+.dialog {
+  background-color: var(--dialog-bg-color);
+  border-radius: 1rem;
+  color: var(--game-bg-color);
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.icon {
+  font-size: 5rem;
+}
+
+.congrats {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.restart {
+  border: none;
+  background-color: var(--game-bg-color);
+  border-radius: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: monospace;
+  font-weight: 600;
+  padding: 1rem;
+  width: 100%;
 }
 
 @media screen and (max-width: 36rem) {
