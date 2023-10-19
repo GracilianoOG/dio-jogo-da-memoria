@@ -21,25 +21,11 @@ const pairMatchedAudio = document.querySelector("#success");
 
 let openCards = [];
 
-let shuffleEmojis = emojis.sort(() => 
-  (Math.random() > 0.5 ? 2 : -1)
-);
-
-for(let i = 0; i < emojis.length; i++) {
-  let box = document.createElement("button");
-  box.className = "item";
-  box.id = i;
-  box.innerHTML = shuffleEmojis[i];
-  box.onclick = handleClick;
-  document.querySelector(".game").appendChild(box);
-}
-
 function handleClick() {
-  if(this.classList.contains("boxMatch")) {
-    return;
-  }
-
-  if(openCards.length === 1 && openCards[0].id === this.id) {
+  if(
+    this.classList.contains("boxMatch") || 
+    openCards.length === 1 && openCards[0].id === this.id
+  ) {
     return;
   }
 
@@ -55,14 +41,17 @@ function handleClick() {
 }
 
 function checkMatch() {
-  if(openCards[0].innerHTML === openCards[1].innerHTML) {
-    openCards[0].classList.add("boxMatch");
-    openCards[1].classList.add("boxMatch");
+  const firstCard = openCards[0];
+  const secondCard = openCards[1];
+
+  if(firstCard.innerHTML === secondCard.innerHTML) {
+    firstCard.classList.add("boxMatch");
+    secondCard.classList.add("boxMatch");
     pairMatchedAudio.currentTime = 0;
     pairMatchedAudio.play();
   } else {
-    openCards[0].classList.remove("boxOpen");
-    openCards[1].classList.remove("boxOpen");
+    firstCard.classList.remove("boxOpen");
+    secondCard.classList.remove("boxOpen");
   }
 
   openCards = [];
@@ -71,3 +60,20 @@ function checkMatch() {
     alert("Você venceu!");
   }
 }
+
+function init() {
+  let shuffleEmojis = emojis.sort(() => 
+    (Math.random() > 0.5 ? 1 : -1)
+  );
+
+  for(let i = 0; i < emojis.length; i++) {
+    let box = document.createElement("button");
+    box.className = "item";
+    box.id = i;
+    box.innerHTML = shuffleEmojis[i];
+    box.onclick = handleClick;
+    document.querySelector(".game").appendChild(box);
+  }
+}
+
+init();
