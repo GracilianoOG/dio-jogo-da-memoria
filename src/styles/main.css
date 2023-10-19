@@ -93,8 +93,9 @@ body {
 .item::after {
   background-color: var(--card-back-bg);
   backface-visibility: hidden;
-  content: "";
+  content: "❔";
   inset: 0;
+  line-height: var(--relative-size);
   position: absolute;
   transform: rotateY(0deg);
   transition: .25s;
