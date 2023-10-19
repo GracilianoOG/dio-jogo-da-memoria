@@ -11,6 +11,22 @@
   --game-shadow: 0 0 1rem rgba(0, 0, 0, .35);
 }
 
+@keyframes move-board {
+  0% {
+    transform: scale(.95);
+    opacity: .1;
+  }
+
+  60% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 body {
   align-items: center;
   background-color: var(--page-bg-color);
@@ -22,6 +38,7 @@ body {
 }
 
 .container {
+  animation: move-board .75s;
   align-items: center;
   background-color: var(--game-bg-color);
   box-shadow: var(--game-shadow);
